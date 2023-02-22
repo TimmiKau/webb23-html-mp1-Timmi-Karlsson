@@ -1,91 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*:root{
-
-    --Main--color: #04AA6D; /* Huvudfärg */
-    --Se--color: #2c9c77; /* Annan färg */
+*:root {
+  --Main--color: #04aa6d; /* Huvudfärg */
+  --Se--color: #2c9c77; /* Annan färg */
 }
-
 
 body {
-    font-family: 'Roboto', sans-serif; /* Font */
-    margin: 0; /* kant i kant */
+  font-family: 'Roboto', sans-serif; /* Font */
+  margin: 0; /* kant i kant */
+  margin-top: 100px;
 }
 
-ul{ /* Lista */
-    list-style-type: none; /* *inst syns */
-    margin: 0; 
-    padding: 15px;
-    position: sticky; /* Nav bar fastnar */
-    top: 0; 
-    background-color: white;
+#sticky-nav {
+  /* Lista */
+  list-style-type: none; /* *inst syns */
+  margin: 0;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
 }
 
-li{ /* item i lista */
-    display:inline; /* rad */
-    font-size: 20px; 
-    margin-left: 20px;
-    margin-right: 20px;
+#Navitem {
+  /* item i lista */
+  display: inline; /* rad */
+  font-size: 20px;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-a{ /* Länkar */
-    padding-right: 10px; 
-    text-decoration: none; /* ta bort länkfärg/streck */
-    color: black;
+a {
+  /* Länkar */
+  padding-right: 1rem;
+  text-decoration: none; /* ta bort länkfärg/streck */
+  color: black;
 }
 
-a:hover{ 
-    background-color: var(--Se--color);
+a:hover {
+  background-color: var(--Se--color);
 }
 
-.kontaktfrom{ 
-    width: 80%;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+.kontaktfrom {
+  width: 80%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 /* Target, allt som är text */
-input[type=text], select, textarea {
-    width: 95%;
-    padding: 12px;
-    border: 1px solid black;
-    border-radius: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;  /* Anpassa storlek endast vertical */
+input[type='text'],
+select,
+textarea {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; /* Anpassa storlek endast vertical */
 }
 
 /* Target knapp */
-input[type=submit] {
-    background-color: var(--Main--color);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer; 
+input[type='submit'] {
+  background-color: var(--Main--color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
+input[type='submit']:hover {
+  background-color: var(--Se--color);
+}
 
-input[type=submit]:hover {
-    background-color: var(--Se--color);
-  }
+footer {
+  margin: 0;
+  border: 1px solid black;
+  background-color: gray;
+  margin-bottom: 38px;
+}
 
-  footer {
-    margin: 0;
-    border: 1px solid black;
-    background-color: gray;
-  }
+h1,
+h2 {
+  color: var(--Main--color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  h1, h2 {
-    color: var(--Main--color);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-  }
+p {
+  font-family: 'Times New Roman', Times, serif;
+}
 
-  p {
-font-family: 'Times New Roman', Times, serif;
-  }
-
-  /* Space i toppen. Vg krav */
-main{
-    margin-top: 100px;
+h4 {
+  font-style: italic;
+  font-family: cursive;
 }
